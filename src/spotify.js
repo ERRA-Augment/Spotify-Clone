@@ -30,4 +30,4 @@ export const getTokenFromUrl  = () => {
 
 export const loginUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope.join(
   "%20"
-)}&response_type=token&show_dialog=true`;
+)}&response_type=token&show_dialog=true`; 

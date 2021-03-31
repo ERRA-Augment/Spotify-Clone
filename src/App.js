@@ -43,13 +43,9 @@ function App() {
       })
     })
   }
- 
-  console.log("TOKENFACE", token);
 
   }, []);
 
-  console.log("user", user);
-  console.log("token", token);
 
   return (
     <div className="app">

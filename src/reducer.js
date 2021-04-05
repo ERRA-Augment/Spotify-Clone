@@ -7,7 +7,7 @@ export const initialState = {
     // token: 'BQCObgO8IwZpqyNaW_lK_zPnEhVsMg2tvHGwsp4S2CW45C5FUjhtVIsXhs9AYOL-BzwuswTxkm4UwLBWiwEegtExsCYpzbznNxqqrXuXi4-wFrFdsspZcxj2JNTmvaP-mCcPZYhQzolTbrVEERt0Mkbn9exuyH_SUpLUg5JvwbVkOUW9',
 };
 
-const reducer = (state, action) => {
+export var reducer = (state, action) => {
 console.log(action);
 
 // Action => type, [payload]
@@ -17,7 +17,7 @@ console.log(action);
         case 'SET_USER':
             return {
                 ...state,
-                user: action.user
+                user: action.user,
             };
         case "SET_TOKEN":
             return {

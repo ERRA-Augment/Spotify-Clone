@@ -24,7 +24,8 @@ function Sidebar() {
         {playlists?.items?.map(playlist => (
             <SidebarOption title={playlist.name} />
         ))}
-        <SidebarOption title="Drum & Bass" />
+        
+        <SidebarOption title="Drum Bass" />
         <SidebarOption title=" Classic Rock" />
         <SidebarOption title="Djent" />
         

@@ -12,7 +12,7 @@ function App() {
 
   // Run code based on a given condition 
 
-  const [{ user, token }, dispatch] = useDataLayerValue();
+  const [{user, token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
 
@@ -34,19 +34,19 @@ function App() {
 
     spotify.setAccessToken(_token);
 
-    spotify.getMe().then(user => {
+    spotify.getMe().then((user) => {
       
 
       dispatch({
         type: 'SET_USER',
-        user: user
-      })
-    })
+        user: user,
+      });
+    });
 
     spotify.getUserPlaylists().then((playlists) => {
     dispatch({
       type: "SET_PLAYLISTS",
-      playlists: playlists
+      playlists: playlists,
     })
   })
   }
